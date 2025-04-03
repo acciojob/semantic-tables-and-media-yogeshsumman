@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semantic Tables and Media</title>
+    <style>
+        /* Optional styling to match the assignment's intent */
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ol {
+            list-style-position: inside;
+            margin: 20px auto;
+            width: 50%;
+        }
+        img, video, audio {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
+    <!-- Semantic Table -->
     <table>
+        <caption>Student Roll Numbers and Names</caption>
         <thead>
             <tr>
-                <th>Roll Number</th>
-                <th>Name</th>
+                <th scope="col">Roll Number</th>
+                <th scope="col">Name</th>
             </tr>
         </thead>
         <tbody>
@@ -27,8 +57,10 @@
         </tbody>
     </table>
 
+    <!-- Heading -->
     <h2>List of Media</h2>
 
+    <!-- Ordered List with Media Items -->
     <ol>
         <li>
             <img src="https://picsum.photos/id/123/200/300" alt="Random image from Picsum">
