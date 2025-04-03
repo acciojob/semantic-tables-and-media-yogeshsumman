@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic Tables and Media</title>
+    <title>Semantic Navbar and Videos</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Optional styling to match the assignment's intent */
-        table {
-            border-collapse: collapse;
-            width: 50%;
-            margin: 20px auto;
+        /* Minimal inline styling to ensure layout (can be overridden by styles.css) */
+        nav {
+            background-color: #333;
+            padding: 1rem;
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
         }
-        th {
-            background-color: #f2f2f2;
+        nav a {
+            color: white;
+            text-decoration: none;
         }
-        ol {
-            list-style-position: inside;
-            margin: 20px auto;
-            width: 50%;
+        nav a:hover {
+            text-decoration: underline;
         }
-        img, video, audio {
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        video {
             display: block;
             margin: 10px auto;
             max-width: 100%;
@@ -32,51 +37,25 @@
     </style>
 </head>
 <body>
-    <!-- Semantic Table -->
-    <table>
-        <caption>Student Roll Numbers and Names</caption>
-        <thead>
-            <tr>
-                <th scope="col">Roll Number</th>
-                <th scope="col">Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>101</td>
-                <td>Alice</td>
-            </tr>
-            <tr>
-                <td>102</td>
-                <td>Bob</td>
-            </tr>
-            <tr>
-                <td>103</td>
-                <td>Charlie</td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Semantic Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
 
-    <!-- Heading (Updated to match test expectation) -->
-    <h2>List of medias</h2>
+    <!-- Heading for Videos -->
+    <h2>3 random videos</h2>
 
-    <!-- Ordered List with Media Items -->
-    <ol>
-        <li>
-            <img src="https://picsum.photos/id/123/200/300" alt="Random image from Picsum">
-        </li>
-        <li>
-            <video controls>
-                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </li>
-        <li>
-            <audio controls>
-                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-                Your browser does not support the audio tag.
-            </audio>
-        </li>
-    </ol>
-</body>
-</html>
+    <!-- Video Section -->
+    <div>
+        <video controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
