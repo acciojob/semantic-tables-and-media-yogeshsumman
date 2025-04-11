@@ -3,59 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic Navbar and Videos</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Minimal inline styling to ensure layout (can be overridden by styles.css) */
-        nav {
-            background-color: #333;
-            padding: 1rem;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        h2 {
-            text-align: center;
-            margin: 20px 0;
-        }
-        video {
-            display: block;
-            margin: 10px auto;
-            max-width: 100%;
-        }
-    </style>
+    <title>Semantic Table and Media</title>
 </head>
 <body>
-    <!-- Semantic Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#contact">Contact us</a></li>
-        </ul>
-    </nav>
+    <!-- Semantic Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Charlie</td>
+            </tr>
+        </tbody>
+    </table>
 
-    <!-- Heading for Videos -->
-    <h2>3 random videos</h2>
+    <!-- Heading -->
+    <h2>List of medias</h2>
 
-    <!-- Video Section -->
-    <div>
-        <video controls>
-            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <video controls>
-            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <!-- Ordered List with Media -->
+    <ol>
+        <li>
+            <img src="https://picsum.photos/id/123/200/300" alt="Random image from Picsum">
+        </li>
+        <li>
+            <video controls>
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </li>
+        <li>
+            <audio controls>
+                <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+                Your browser does not support the audio tag.
+            </audio>
+        </li>
+    </ol>
+</body>
+</html>
